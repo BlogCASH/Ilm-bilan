@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+nav {
+  background: #222;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+#about img {
+  width: 180px;
+  border-radius: 50%;
+  border: 4px solid #00bcd4;
+}
+
+#about .text {
+  flex: 1;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #00bcd4;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list span {
+  background: #00bcd4;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+}
+
+.contact a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+@media(max-width: 600px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about img {
+    width: 130px;
+  }
+}
