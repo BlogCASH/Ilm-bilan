@@ -260,3 +260,21 @@ nav a:hover::after {
     padding: 20px 15px;
   }
 }
+.royxat-tugma {
+  display: inline-block;
+  background: linear-gradient(135deg, #00bcd4, #007b9e);
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.royxat-tugma:hover {
+  background: linear-gradient(135deg, #007b9e, #00bcd4);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}

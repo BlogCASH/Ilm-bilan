@@ -7,17 +7,42 @@
     <link rel="stylesheet" href="kirish.css">
 </head>
 <body>
-     <div class="container">
-    <div class="signup-box">
-      <h1>Ro‘yxatdan o‘tish</h1>
+  <!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ro‘yxatdan o‘tish | Ilm bilan</title>
+  <link rel="stylesheet" href="royhat.css">
+</head>
+<body>
 
-      <input type="text" id="firstName" placeholder="Ismingiz" required />
-      <input type="text" id="lastName" placeholder="Familiyangiz" required />
-      <input type="date" id="birthdate" required />
-     
+  <div class="box">
+    <h2>📝 Ro‘yxatdan o‘tish</h2>
+    <p>“Ilm bilan” jamoasiga qo‘shiling!</p>
 
-      <button class="btn" onclick="registerUser()">✅ Ro‘yxatdan o‘tish</button>
-      <p id="errorMsg" class="error"></p>
+    <form>
+      <label for="ism">Ismingiz</label>
+      <input type="text" id="ism" placeholder="Ismingizni kiriting" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email manzilingiz" required>
+
+      <label for="parol">Parol</label>
+      <input type="password" id="parol" placeholder="Parol kiriting" required>
+
+      <div class="shart">
+        <input type="checkbox" id="qabul" required>
+        <label for="qabul">Men shartlarga roziman</label>
+      </div>
+
+      <input type="submit" value="Ro‘yxatdan o‘tish" class="tugma">
+    </form>
+  </div>
+
+</body>
+</html>
+
     </div>
   </div>
 </body>
