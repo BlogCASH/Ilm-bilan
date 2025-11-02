@@ -7,43 +7,39 @@
     <link rel="stylesheet" href="kirish.css">
 </head>
 <body>
-  <!DOCTYPE html>
-<html lang="uz">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ro‘yxatdan o‘tish | Ilm bilan</title>
-  <link rel="stylesheet" href="royhat.css">
-</head>
-<body>
+ <main class="wrap">
+    <div class="box">
+      <h2>📝 Roʻyxatdan oʻtish</h2>
+      <p>“Ilm bilan” jamoasiga qo‘shiling!</p>
 
-  <div class="box">
-    <h2>📝 Ro‘yxatdan o‘tish</h2>
-    <p>“Ilm bilan” jamoasiga qo‘shiling!</p>
+      <form id="royxatForm" novalidate>
+        <label for="ism">Ism</label>
+        <input type="text" id="ism" name="ism" placeholder="Ismingizni kiriting" required>
 
-    <form>
-      <label for="ism">Ismingiz</label>
-      <input type="text" id="ism" placeholder="Ismingizni kiriting" required>
+        <label for="yosh">Yosh</label>
+        <input type="number" id="yosh" name="yosh" placeholder="Yoshingizni kiriting" min="7" max="20" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Email manzilingiz" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email manzilingiz" required>
 
-      <label for="parol">Parol</label>
-      <input type="password" id="parol" placeholder="Parol kiriting" required>
+        <label for="parol">Parol</label>
+        <input type="password" id="parol" name="parol" placeholder="Parol (kamida 6 belgi)" required>
 
-      <div class="shart">
-        <input type="checkbox" id="qabul" required>
-        <label for="qabul">Men shartlarga roziman</label>
-      </div>
+        <div class="shart">
+          <input type="checkbox" id="qabul" name="qabul" required>
+          <label for="qabul">Men shartlarga roziman</label>
+        </div>
 
-      <input type="submit" value="Ro‘yxatdan o‘tish" class="tugma">
-    </form>
-  </div>
+        <div class="actions">
+          <button type="submit" class="tugma">Roʻyxatdan oʻtish</button>
+          <a class="link" href="kirish.html">Menda akkaunt bor — kirish</a>
+        </div>
 
-</body>
-</html>
-
+        <p id="msg" class="msg" aria-live="polite"></p>
+      </form>
     </div>
-  </div>
+  </main>
+
+  <script src="Ilm_bilan.js"></script>
 </body>
 </html>

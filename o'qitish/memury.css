@@ -1,0 +1,62 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #00bcd4, #0066cc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.game-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  color: transparent;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.card.flipped {
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #111;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00bcd4;
+}

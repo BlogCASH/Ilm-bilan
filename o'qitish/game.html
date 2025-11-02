@@ -1,0 +1,34 @@
+
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaqtni yaxshi o'tkaz | Ilm bilan</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body style="font-family:Poppins, sans-serif; text-align:center; background:#d4f9ff; padding:40px;">
+
+ <div class="game-container">
+    <h1>🧠 Matematik O‘yin</h1>
+    <h2 id="level">1-daraja</h2>
+    <p id="timer">⏰ 60 soniya qoldi</p>
+
+    <div id="question"></div>
+
+    <input type="number" id="answer" placeholder="Javobni yozing...">
+    <button id="submit">✅ Javob berish</button>
+
+    <p id="feedback"></p>
+    <p id="progress"></p>
+
+    <button id="exit">🚪 O‘yindan chiqish</button>
+  </div>
+
+  <!-- Konfetti animatsiyasi -->
+  <canvas id="confetti"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  
+  <script src="7-11_yosh.js"></script>
+</body>
+</html>

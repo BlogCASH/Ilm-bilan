@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+  font-family: "Fredoka One", cursive;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 420px;
+}
+
+h1 {
+  color: #ff4081;
+  font-size: 2em;
+}
+
+#level, #timer {
+  color: #007bff;
+  font-size: 1.2em;
+}
+
+.grid {
+  display: grid;
+  margin: 20px auto;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tile {
+  width: 70px;
+  height: 70px;
+  background: #00c6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tile.correct {
+  background: #4caf50;
+  transform: scale(1.1);
+}
+
+.tile.wrong {
+  background: #f44336;
+  transform: scale(1.1);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  border-radius: 15px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#message {
+  color: #333;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+button {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+#restart {
+  display: none;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
