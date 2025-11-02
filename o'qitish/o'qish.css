@@ -142,3 +142,121 @@ footer {
   font-size: 14px;
 
 }
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00bcd4;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+#about {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,188,212,0.3);
+  border-left: 4px solid #00bcd4;
+}
+@media(max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+
+  body {
+    padding-bottom: 50px;
+  }
+}
+.to-top {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00bcd4;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.to-top:hover {
+  color: #fff;
+}
+#fanlar {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#fanlar h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00bcd4;
+}
+
+.fanlar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.fan-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.fan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0,188,212,0.25);
+}
+
+.fan-card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.fan-card h3 {
+  color: #111;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.fan-card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Mobil moslashuv */
+@media(max-width: 600px) {
+  #fanlar h2 {
+    font-size: 1.5rem;
+  }
+
+  .fan-card {
+    padding: 20px 15px;
+  }
+}
